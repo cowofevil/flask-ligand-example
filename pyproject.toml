@@ -36,4 +36,3 @@ branch = "main"
 version_pattern = "setup.cfg:version = {version}"
 version_variable = "flask_ligand_example/__init__.py:__version__"
 commit_parser = "semantic_release.history.emoji_parser"
-upload_to_repository = false
