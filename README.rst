@@ -2,7 +2,7 @@
 flask-ligand-example
 ====================
 
-|codecov-status| |pre-commit-status|
+|build-status| |pypi-status| |codecov-status| |pre-commit-status|
 
 A simple example project on how to use the `flask-ligand`_ library. This example project is based on the `example`_
 from the `flask-smorest`_ project. (Which is a core library that `flask-ligand`_ is built upon)
@@ -125,10 +125,13 @@ Resources
 .. _`License`: ./LICENSE
 
 .. |build-status| image:: https://img.shields.io/github/workflow/status/cowofevil/flask-ligand-example/Build?logo=github
-   :target: https://github.com/cowofevil/flask-ligand/actions/workflows/bump_and_publish_release.yml
+   :target: https://github.com/cowofevil/flask-ligand-example/actions/workflows/bump_and_publish_release.yml
    :alt: Build
+.. |pypi-status| image:: https://img.shields.io/pypi/v/flask-ligand-example?color=blue&logo=pypi
+   :target: https://pypi.org/project/flask-ligand-example/
+   :alt: PyPI
 .. |codecov-status| image:: https://img.shields.io/codecov/c/gh/cowofevil/flask-ligand-example?color=teal&logo=codecov
-   :target: https://app.codecov.io/gh/cowofevil/flask-ligand
+   :target: https://app.codecov.io/gh/cowofevil/flask-ligand-example
    :alt: Codecov
 .. |pre-commit-status| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
    :target: https://github.com/pre-commit/pre-commit

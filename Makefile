@@ -229,3 +229,15 @@ bump-version: check-dirty test-tox ## determine the new version number from comm
 build: check-dirty clean-build ## builds source and wheel package
 	@python3 setup.py sdist bdist_wheel
 	@ls -l dist
+
+.PHONY: upload
+upload: check-dirty ## upload package to PyPI
+	@twine upload dist/*
+
+.PHONY: upload-test
+upload-test: check-dirty ## upload package to Test PyPI
+	@twine upload -r testpypi dist/*
+
+.PHONY: publish
+publish: check-dirty ## update changelog, bump version, push changes to git, build and then upload to PyPI
+	@semantic-release publish
