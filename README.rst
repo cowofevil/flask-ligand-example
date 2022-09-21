@@ -73,7 +73,7 @@ Explore with SwaggerUI Docs
 ===========================
 
 This example project has all the bells and whistles enabled for the `flask-ligand`_ library which can be explored by
-using the included `SwaggerUI`_ documentation. Follow the instuctions below to start start running a local Flask server
+using the included `SwaggerUI`_ documentation. Follow the instructions below to start start running a local Flask server
 to serve the `SwaggerUI`_ documentation.
 
 
@@ -81,13 +81,13 @@ to serve the `SwaggerUI`_ documentation.
 
     $ make gen-local-env-file
 
-2. Generate a JWT access token with admin rights for accessing the included example project endpoints::
-
-    $ make gen-admin-access-token
-
-3. Initialize the database::
+2. Initialize the database::
 
     $ make setup-db
+
+3. Generate a JWT access token with admin rights for accessing the included example project endpoints::
+
+    $ make gen-admin-access-token
 
 4. Start the local Flask server::
 

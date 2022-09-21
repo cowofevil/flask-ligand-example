@@ -27,14 +27,19 @@ __version__ = "0.1.1"
 # Functions: Public
 # ======================================================================================================================
 def create_app(flask_env: str, api_title: str, api_version: str, openapi_client_name: str, **kwargs: Any) -> Flask:
-    """Create Flask application.
+    """
+    Create Flask application.
 
     Args:
         flask_env: Specify the environment to use when launching the flask app. Available environments:
-            'prod': Configured for use in a production environment.
-            'stage': Configured for use in a development/staging environment.
-            'local': Configured for use with a local Flask server.
-            'testing': Configured for use in unit testing.
+
+            ``prod``: Configured for use in a production environment.
+
+            ``stage``: Configured for use in a development/staging environment.
+
+            ``local``: Configured for use with a local Flask server.
+
+            ``testing``: Configured for use in unit testing.
         api_title: The title (name) of the API to display in the OpenAPI documentation.
         api_version: The semantic version for the OpenAPI client.
         openapi_client_name: The package name to use for generated OpenAPI clients.
@@ -48,15 +53,8 @@ def create_app(flask_env: str, api_title: str, api_version: str, openapi_client_
             uppercase or the specified environment is invalid.
     """
 
-    app = Flask(__name__)
-
-    flask_ligand.default_settings.flask_environment_configurator(
-        app, flask_env, api_title, api_version, openapi_client_name, **kwargs
-    )
-
-    api = flask_ligand.extensions.create_api(app)
+    app, api = flask_ligand.create_app(__name__, flask_env, api_title, api_version, openapi_client_name, **kwargs)
 
     views.register_blueprints(api)
-    flask_ligand.views.register_blueprints(api)
 
     return app
