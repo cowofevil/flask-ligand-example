@@ -3,6 +3,10 @@ Changelog
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2022-09-21)
+### :sparkles:
+* [FIX:sparkles:] Update to flask-ligand v0.4.0 ([`ea3e349`](https://github.com/cowofevil/flask-ligand-example/commit/ea3e349c3df2860629426ce79377e20610199862))
+
 ## v0.1.1 (2022-09-14)
 ### :robot:
 * [538:robot:] Enable Publishing Package to PyPI ([`7a99d03`](https://github.com/cowofevil/flask-ligand-example/commit/7a99d0379972e9dafea1b4ce130e0c180e0552d2))
