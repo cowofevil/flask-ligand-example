@@ -1,1 +1,1 @@
-flask-ligand~=0.4
+flask-ligand~=0.5

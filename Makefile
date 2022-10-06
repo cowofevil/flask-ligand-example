@@ -79,10 +79,11 @@ teardown-integration: ## teardown the Docker environment for integration testing
 
 .PHONY: gen-local-env-file
 gen-local-env-file: setup-integration check-integration ## generate an '.env' file for accessing the integration environment
-	@echo -e "OIDC_ISSUER_URL=http://localhost:8080\n"\
+	@echo -e "FLASK_ENV=local\n"\
+	"OIDC_ISSUER_URL=http://localhost:8080\n"\
 	"OIDC_REALM=flask-ligand\n"\
 	"SQLALCHEMY_DATABASE_URI=postgresql+pg8000://admin:password@localhost:5432/app\n"\
-	"OPENAPI_GEN_SERVER_URL=http://localhost:8888\n" > '.env'
+	"OPENAPI_GEN_SERVER_URL=http://localhost:8888" > '.env'
 
 .PHONY: gen-admin-access-token
 gen-admin-access-token: setup-integration check-integration ## generate an access token with the 'admin' composite role
@@ -215,11 +216,11 @@ develop-venv: clean-venv develop ## setup a dev environment after wiping the vir
 
 .PHONY: run
 run:  ## run the app in a Flask server (requires an auth service)
-	@FLASK_ENV='local' flask run
+	@flask run
 
 .PHONY: run-debug
 run-debug:  ## run the app in a Flask server (requires an auth service) with debug mode enabled
-	@FLASK_ENV='local' FLASK_DEBUG='1' flask run
+	@FLASK_DEBUG='1' flask run
 
 .PHONY: bump-version
 bump-version: check-dirty test-tox ## determine the new version number from commits, create release commit, and create a tag.
