@@ -105,6 +105,14 @@ If you would like to make changes to the `Keycloak`_ IAM clients to explore auth
 admin console by navigating to 'http://localhost:8080/admin/master/console/'. The admin credentials can be found in the
 'docker/env_files/integration.env/' file.
 
+Flask-Migrate Auto-generation
+=============================
+
+For `Flask-Migrate`_ to work well when auto-generating migration scripts it is critical that the ``script.py.mako``
+template in the ``migrations`` folder include an import for ``sqlalchemy_utils``. This project already has the template
+updated, but if you are using the ``flask-ligand`` library without copying this example project, then it is necessary
+you make the appropriate update to the ``script.py.mako`` template before using `Flask-Migrate`_.
+
 Resources
 =========
 
@@ -117,6 +125,7 @@ Resources
 .. _Compose V2: https://docs.master.dockerproject.org/compose/#compose-v2-and-the-new-docker-compose-command
 .. _flask-ligand: https://flask-ligand.readthedocs.io/en/stable/
 .. _flask-smorest: https://flask-smorest.readthedocs.io/en/latest/
+.. _`Flask-Migrate`: https://flask-migrate.readthedocs.io/en/latest/
 .. _example: https://flask-smorest.readthedocs.io/en/latest/quickstart.html
 .. _`SwaggerUI`: https://swagger.io/tools/swagger-ui/
 .. _`Keycloak`: https://www.keycloak.org/
