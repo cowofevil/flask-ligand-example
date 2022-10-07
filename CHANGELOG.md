@@ -3,6 +3,14 @@ Changelog
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2022-10-07)
+### Feature
+* [511:sparkles:] Fix OIDC IAM Provider Configuration ([`7e3b44e`](https://github.com/cowofevil/flask-ligand-example/commit/7e3b44edb5c8dd0590f1060a081e966d58a505a1))
+
+### Other
+* Build(deps-dev): update pytest-mock requirement from ~=3.8 to ~=3.10 ([`da8dc29`](https://github.com/cowofevil/flask-ligand-example/commit/da8dc29d34b4da8f1dd5a988c5781caadef9a260))
+* Build(deps-dev): update black requirement from ~=22.8 to ~=22.10 ([`72c759e`](https://github.com/cowofevil/flask-ligand-example/commit/72c759e8b97bf0bc650edf1ef9dd5a833413b191))
+
 ## v0.3.0 (2022-10-07)
 ### Feature
 * [500:sparkles:] Add Auth0 Support ([`021a7af`](https://github.com/cowofevil/flask-ligand-example/commit/021a7afa744d174866d7f2ae3b7f073328a7117f))
