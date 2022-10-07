@@ -118,8 +118,8 @@ def basic_flask_app(
 
     # noinspection HttpUrlsUsage
     override_settings = {
-        "OIDC_ISSUER_URL": f"http://{int_testing_env_vars['KC_HOSTNAME']}:{int_testing_env_vars['KC_PORT']}",
-        "OIDC_REALM": f"{int_testing_env_vars['KC_REALM']}",
+        "OIDC_DISCOVERY_URL": f"http://{int_testing_env_vars['KC_HOSTNAME']}:{int_testing_env_vars['KC_PORT']}/"
+        f"realms/{int_testing_env_vars['KC_REALM']}/.well-known/openid-configuration",
         "SQLALCHEMY_DATABASE_URI": db_uri,
         "DB_AUTO_UPGRADE": True,
         "DB_MIGRATION_DIR": migration_directory,

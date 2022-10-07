@@ -80,8 +80,7 @@ teardown-integration: ## teardown the Docker environment for integration testing
 .PHONY: gen-local-env-file
 gen-local-env-file: setup-integration check-integration ## generate an '.env' file for accessing the integration environment
 	@echo -e "FLASK_ENV=local\n"\
-	"OIDC_ISSUER_URL=http://localhost:8080\n"\
-	"OIDC_REALM=flask-ligand\n"\
+	"OIDC_DISCOVERY_URL=http://localhost:8080/realms/flask-ligand/.well-known/openid-configuration\n"\
 	"SQLALCHEMY_DATABASE_URI=postgresql+pg8000://admin:password@localhost:5432/app\n"\
 	"OPENAPI_GEN_SERVER_URL=http://localhost:8888" > '.env'
 
