@@ -164,7 +164,12 @@ class TestNegativeDeletePets(object):
     """Negative DELETE test cases for the 'pets' endpoint."""
 
     def test_delete_pet_without_access_token(
-        self, app_test_client, pets_url, access_token_headers, dummy_id, dummy_etag
+        self,
+        app_test_client,
+        pets_url,
+        access_token_headers,
+        dummy_id,
+        dummy_etag,
     ):
         """
         Verify that the correct HTTP code is returned when attempting to access a protected endpoint without a JWT
@@ -176,7 +181,12 @@ class TestNegativeDeletePets(object):
             assert ret.json["message"] == "Missing Authorization Header"
 
     def test_delete_pet_with_insufficient_role(
-        self, app_test_client, pets_url, access_token_headers_no_roles, dummy_id, dummy_etag
+        self,
+        app_test_client,
+        pets_url,
+        access_token_headers_no_roles,
+        dummy_id,
+        dummy_etag,
     ):
         """
         Verify that the correct HTTP code is returned when attempting to access a protected endpoint using a JWT

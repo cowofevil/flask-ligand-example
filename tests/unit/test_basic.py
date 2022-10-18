@@ -97,7 +97,12 @@ class TestNegativeGetPets(object):
             assert len(ret.json) == 0
 
     def test_get_pet_by_id_with_invalid_id(
-        self, primed_test_client, pets_url, access_token_headers, dummy_id, invalid_pet_id_error_msg
+        self,
+        primed_test_client,
+        pets_url,
+        access_token_headers,
+        dummy_id,
+        invalid_pet_id_error_msg,
     ):
         """Verify that the correct HTTP code is returned when an invalid ID is specified."""
 
@@ -294,7 +299,12 @@ class TestNegativeUpdatePets(object):
     # noinspection PyTestParametrized
     @pytest.mark.parametrize("default_roles", ["insufficient_role"])
     def test_update_pet_with_insufficient_role(
-        self, app_test_client, pets_url, access_token_headers, dummy_id, dummy_etag
+        self,
+        app_test_client,
+        pets_url,
+        access_token_headers,
+        dummy_id,
+        dummy_etag,
     ):
         """
         Verify that the correct HTTP code is returned when attempting to access a protected endpoint using a JWT
@@ -348,7 +358,11 @@ class TestNegativeUpdatePets(object):
             assert ret.status_code == 422
 
     def test_update_pet_with_disallowed_desc(
-        self, primed_test_client, pets_url, access_token_headers, pets_test_data_set
+        self,
+        primed_test_client,
+        pets_url,
+        access_token_headers,
+        pets_test_data_set,
     ):
         """Verify that the correct HTTP code is returned when the description contains a disallowed content."""
 
@@ -372,7 +386,12 @@ class TestNegativeUpdatePets(object):
             assert ret.status_code == 428
 
     def test_update_pet_with_invalid_etag(
-        self, primed_test_client, pets_url, access_token_headers, pets_test_data_set, dummy_etag
+        self,
+        primed_test_client,
+        pets_url,
+        access_token_headers,
+        pets_test_data_set,
+        dummy_etag,
     ):
         """
         Verify that the correct HTTP code is returned when attempting to update a pet with an invalid ETag
@@ -410,7 +429,12 @@ class TestNegativeDeletePets(object):
     """Negative DELETE test cases for the 'pets' endpoint."""
 
     def test_delete_pet_without_access_token(
-        self, app_test_client, pets_url, access_token_headers, dummy_id, dummy_etag
+        self,
+        app_test_client,
+        pets_url,
+        access_token_headers,
+        dummy_id,
+        dummy_etag,
     ):
         """
         Verify that the correct HTTP code is returned when attempting to access a protected endpoint without a JWT
@@ -424,7 +448,12 @@ class TestNegativeDeletePets(object):
     # noinspection PyTestParametrized
     @pytest.mark.parametrize("default_roles", ["user"])
     def test_delete_pet_with_insufficient_role(
-        self, app_test_client, pets_url, access_token_headers, dummy_id, dummy_etag
+        self,
+        app_test_client,
+        pets_url,
+        access_token_headers,
+        dummy_id,
+        dummy_etag,
     ):
         """
         Verify that the correct HTTP code is returned when attempting to access a protected endpoint using a JWT
@@ -479,7 +508,12 @@ class TestNegativeDeletePets(object):
             assert len(ret.json) == 3
 
     def test_update_with_invalid_etag(
-        self, primed_test_client, pets_url, access_token_headers, pets_test_data_set, dummy_etag
+        self,
+        primed_test_client,
+        pets_url,
+        access_token_headers,
+        pets_test_data_set,
+        dummy_etag,
     ):
         """
         Verify that the correct HTTP code is returned when attempting to update a pet with an invalid ETag
