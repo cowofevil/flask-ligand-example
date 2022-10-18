@@ -57,8 +57,8 @@ def _we_love_pets(description: str) -> None:
 # Classes: Public
 # ======================================================================================================================
 @BLP.route("/")
+@BLP.etag
 class Pets(MethodView):
-    @BLP.etag
     @BLP.arguments(PetQueryArgsSchema, location="query")
     @BLP.response(200, PetSchema(many=True))
     @BLP.paginate(SQLCursorPage)  # noqa
@@ -69,7 +69,6 @@ class Pets(MethodView):
 
         return items
 
-    @BLP.etag
     @BLP.arguments(PetSchema)
     @BLP.response(201, PetSchema)
     @BLP.doc(security=BEARER_AUTH)
@@ -87,8 +86,8 @@ class Pets(MethodView):
 
 
 @BLP.route("/<uuid:item_id>")
+@BLP.etag
 class PetsById(MethodView):
-    @BLP.etag
     @BLP.response(200, PetSchema)
     def get(self, item_id: UUID) -> PetModel:
         """Get a pet by ID."""
@@ -97,7 +96,6 @@ class PetsById(MethodView):
 
         return item
 
-    @BLP.etag
     @BLP.arguments(PetSchema)
     @BLP.response(200, PetSchema)
     @BLP.doc(security=BEARER_AUTH)
@@ -116,7 +114,6 @@ class PetsById(MethodView):
 
         return item
 
-    @BLP.etag
     @BLP.response(204)
     @BLP.doc(security=BEARER_AUTH)
     @jwt_role_required(role="admin")
