@@ -3,6 +3,10 @@ Changelog
 
 <!--next-version-placeholder-->
 
+## v0.4.1 (2022-10-18)
+### Fix
+* [543:robot:] Refactor for flask-smorest Etag Changes ([`7718f40`](https://github.com/cowofevil/flask-ligand-example/commit/7718f401d7464fd7ecd56dee3d8fa72695680434))
+
 ## v0.4.0 (2022-10-07)
 ### Feature
 * [511:sparkles:] Fix OIDC IAM Provider Configuration ([`7e3b44e`](https://github.com/cowofevil/flask-ligand-example/commit/7e3b44edb5c8dd0590f1060a081e966d58a505a1))
