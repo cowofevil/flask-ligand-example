@@ -165,6 +165,10 @@ type-check: ## check Python types using mypy
 format: ## format code using black
 	@black flask_ligand_example app.py setup.py tests
 
+.PHONY: run-pre-commit
+run-pre-commit: check-pre-commit ## run pre-commit against all files
+	@pre-commit run --all-files
+
 .PHONY: test
 test: ## run tests quickly with the default Python
 	@pytest -p no:warnings tests/unit
