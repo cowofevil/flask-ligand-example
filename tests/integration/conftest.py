@@ -121,6 +121,8 @@ def basic_flask_app(
         "OIDC_DISCOVERY_URL": f"http://{int_testing_env_vars['KC_HOSTNAME']}:{int_testing_env_vars['KC_PORT']}/"
         f"realms/{int_testing_env_vars['KC_REALM']}/.well-known/openid-configuration",
         "SQLALCHEMY_DATABASE_URI": db_uri,
+        "OPENAPI_GEN_SERVER_URL": f"http://{int_testing_env_vars['LOCAL_HOSTNAME']}:"
+        f"{int_testing_env_vars['OPENAPI_GEN_SERVER_PORT']}",
         "DB_AUTO_UPGRADE": True,
         "DB_MIGRATION_DIR": migration_directory,
     }

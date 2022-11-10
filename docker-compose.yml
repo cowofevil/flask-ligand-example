@@ -32,7 +32,7 @@ services:
 
   openapi:
     container_name: openapi_flask_ligand_example
-    image: openapitools/openapi-generator-online:v6.1.0
+    image: openapitools/openapi-generator-online:v6.2.1
     ports:
       - '8888:8080'
     command: java -Dio.swagger.v3.parser.util.RemoteUrl.trustAll=true -jar /generator/openapi-generator-online.jar
