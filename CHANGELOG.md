@@ -3,6 +3,20 @@ Changelog
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2022-11-10)
+### Feature
+* [536:sparkles:] Generate OpenAPI Clients Offline ([`83d6f48`](https://github.com/cowofevil/flask-ligand-example/commit/83d6f48e82729e4a225dc3d86fb47152cd049f2a))
+
+### Other
+* Build(deps-dev): update mypy requirement from ~=0.982 to ~=0.990 ([`ef064b1`](https://github.com/cowofevil/flask-ligand-example/commit/ef064b146c4e4d53492e1eaa8b875235ed96be54))
+* Build(deps-dev): update tox requirement from ~=3.26 to ~=3.27 ([`f80efe8`](https://github.com/cowofevil/flask-ligand-example/commit/f80efe807b9db93eac14d75d04d43bf723a60121))
+* Build(deps-dev): update pytest requirement from ~=7.1 to ~=7.2 ([`8729b57`](https://github.com/cowofevil/flask-ligand-example/commit/8729b5727398cfbb6bdde490ca170c1ac87fa052))
+* Build(deps-dev): update ipython requirement from ~=8.5 to ~=8.6 ([`2d45ab1`](https://github.com/cowofevil/flask-ligand-example/commit/2d45ab1347b4cece59266ae27c736d6e97b313bf))
+* [545] Update to Python 3.11 Final ([`671ea0f`](https://github.com/cowofevil/flask-ligand-example/commit/671ea0f33f839f49d4e7c2497ecea81b97ec04fc))
+* [542] Drop Pre-Commit Tox Environment ([`828303d`](https://github.com/cowofevil/flask-ligand-example/commit/828303de8eebc8cf3fb5fb259fcfce3b3b314bb7))
+* Build(deps-dev): update types-setuptools requirement ([`8ecde6d`](https://github.com/cowofevil/flask-ligand-example/commit/8ecde6d10e6dc806a2dfdef7302f6157dc4332f9))
+* [pre-commit.ci] pre-commit autoupdate ([`795e98c`](https://github.com/cowofevil/flask-ligand-example/commit/795e98c3cbe82100154e3d9838ce19951faf4ccf))
+
 ## v0.4.1 (2022-10-18)
 ### Fix
 * [543:robot:] Refactor for flask-smorest Etag Changes ([`7718f40`](https://github.com/cowofevil/flask-ligand-example/commit/7718f401d7464fd7ecd56dee3d8fa72695680434))
