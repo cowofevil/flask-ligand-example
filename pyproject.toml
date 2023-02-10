@@ -28,7 +28,7 @@ disallow_untyped_calls = false
 warn_return_any = false
 
 [[tool.mypy.overrides]]
-module = ["flask_migrate.*", "pytest_flask_ligand.*", "urljoin.*"]
+module = ["flask_migrate.*", "urljoin.*"]
 ignore_missing_imports = true
 
 [tool.semantic_release]
