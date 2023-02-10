@@ -133,7 +133,7 @@ Resources
 .. _`Contributing`: ./CONTRIBUTING.rst
 .. _`License`: ./LICENSE
 
-.. |build-status| image:: https://img.shields.io/github/workflow/status/cowofevil/flask-ligand-example/Build?logo=github
+.. |build-status| image:: https://img.shields.io/github/actions/workflow/status/cowofevil/flask-ligand-example/bump_and_publish_release.yml?branch=main&logo=github
    :target: https://github.com/cowofevil/flask-ligand-example/actions/workflows/bump_and_publish_release.yml
    :alt: Build
 .. |pypi-status| image:: https://img.shields.io/pypi/v/flask-ligand-example?color=blue&logo=pypi

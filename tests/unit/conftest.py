@@ -95,7 +95,6 @@ def primed_test_client(
     """Flask app configured for testing with the database pre-populated with test data."""
 
     for i in range(len(pets_test_data_set)):
-
         with app_test_client.post(pets_url, headers=access_token_headers, json=pets_test_data_set[i]) as ret:
             assert ret.status_code == 201
 
@@ -103,6 +102,6 @@ def primed_test_client(
             pets_test_data_set[i]["id"] = ret.json["id"]  # type: ignore
 
             # Verify pets data integrity
-            assert helpers.is_sub_dict(pets_test_data_set[i], ret.json)
+            assert helpers.is_sub_dict(pets_test_data_set[i], ret.json)  # type: ignore
 
     return app_test_client
