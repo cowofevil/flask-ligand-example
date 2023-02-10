@@ -3,6 +3,24 @@ Changelog
 
 <!--next-version-placeholder-->
 
+## v0.5.1 (2023-02-10)
+### Fix
+* [560:robot:] Fix mypy Issues and Badge ([`742f698`](https://github.com/cowofevil/flask-ligand-example/commit/742f69853db986096b3715a65fa42742c381c275))
+
+### Other
+* Build(deps-dev): update tox requirement from ~=4.1 to ~=4.4 ([`1614934`](https://github.com/cowofevil/flask-ligand-example/commit/16149343e7f22ec55964d29d22ec4d3b4f50c741))
+* Build(deps-dev): update coverage[toml] requirement from ~=6.5 to ~=7.1 ([`d5113a4`](https://github.com/cowofevil/flask-ligand-example/commit/d5113a4a78b687c64ffd309a85cbaff94e085dbf))
+* Build(deps-dev): update pygments requirement from ~=2.13 to ~=2.14 ([`8a586e3`](https://github.com/cowofevil/flask-ligand-example/commit/8a586e306be36da94f59b99b384fe8947b28a80f))
+* Build(deps-dev): update types-mock requirement from ~=4.0 to ~=5.0 ([`849118c`](https://github.com/cowofevil/flask-ligand-example/commit/849118cce8afc6015811ed09defbeebd32f12689))
+* Build(deps-dev): update ipython requirement from ~=8.6 to ~=8.8 ([`b75c087`](https://github.com/cowofevil/flask-ligand-example/commit/b75c08793bab32a111b0f76f75446d3f09c877ba))
+* Build(deps-dev): update tox requirement from ~=3.27 to ~=4.1 ([`341e77c`](https://github.com/cowofevil/flask-ligand-example/commit/341e77cf6c0794a86e47c3bdb3daf5a50aa3c664))
+* Build(deps-dev): update black requirement from ~=22.10 to ~=22.12 ([`9a48de9`](https://github.com/cowofevil/flask-ligand-example/commit/9a48de9e6529659208f00e08cebd3b7b340e3881))
+* Build(deps-dev): update types-setuptools requirement ([`4fafa3d`](https://github.com/cowofevil/flask-ligand-example/commit/4fafa3da71f9e1ca1481f5a76400ee4904bc22c1))
+* Build(deps-dev): update flake8 requirement from ~=5.0 to ~=6.0 ([`b113831`](https://github.com/cowofevil/flask-ligand-example/commit/b113831c426b2eb3bc92d1664fc3631fda58bc06))
+* [pre-commit.ci] pre-commit autoupdate ([`a28315b`](https://github.com/cowofevil/flask-ligand-example/commit/a28315bd1192831cc97c855e8e7be8568b8b3641))
+* [pre-commit.ci] pre-commit autoupdate ([`ff714dd`](https://github.com/cowofevil/flask-ligand-example/commit/ff714dd4d0cd7dbc649eb7f04d9e700f09748e4a))
+* Build(deps-dev): update mypy requirement from ~=0.990 to ~=0.991 ([`f9bc630`](https://github.com/cowofevil/flask-ligand-example/commit/f9bc6304f773bbccf50f0be97b79f0a6c49d0ed9))
+
 ## v0.5.0 (2022-11-10)
 ### Feature
 * [536:sparkles:] Generate OpenAPI Clients Offline ([`83d6f48`](https://github.com/cowofevil/flask-ligand-example/commit/83d6f48e82729e4a225dc3d86fb47152cd049f2a))
