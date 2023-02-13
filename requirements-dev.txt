@@ -1,7 +1,7 @@
 black~=22.12
 coverage[toml]~=7.1
 flake8~=6.0
-ipython~=8.8
+ipython~=8.10
 mypy~=0.991
 pg8000~=1.29
 pipdeptree~=2.3
