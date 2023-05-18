@@ -3,6 +3,40 @@ Changelog
 
 <!--next-version-placeholder-->
 
+## v0.5.2 (2023-05-18)
+### Fix
+* [CHORE:bug:] Update Deps ([`0d81235`](https://github.com/cowofevil/flask-ligand-example/commit/0d81235ffd20478748f71d42ebdd5aaf720e9e0a))
+
+### Other
+* Build(deps-dev): update types-setuptools requirement ([#77](https://github.com/cowofevil/flask-ligand-example/issues/77)) ([`dd05432`](https://github.com/cowofevil/flask-ligand-example/commit/dd054324bdc4085d9bee9b7b491a6be81c7053f8))
+* Build(deps-dev): update ipython requirement from ~=8.12 to ~=8.13 ([`1b84aae`](https://github.com/cowofevil/flask-ligand-example/commit/1b84aae61f86413d7b1319b899dd7cd98869f629))
+* Build(deps-dev): update tox requirement from ~=4.4 to ~=4.5 ([`db4fed9`](https://github.com/cowofevil/flask-ligand-example/commit/db4fed9c7943699a7faa36b67996934331b0def1))
+* Build(deps-dev): update types-requests requirement from ~=2.28 to ~=2.30 ([`ee4aaee`](https://github.com/cowofevil/flask-ligand-example/commit/ee4aaee4aa41fdb222b348360dd77dc59e7417bd))
+* [pre-commit.ci] pre-commit autoupdate ([`dc1b6b2`](https://github.com/cowofevil/flask-ligand-example/commit/dc1b6b271c964a2c54dfc32f5e7649e3a081a8b7))
+* Build(deps-dev): update pygments requirement from ~=2.14 to ~=2.15 ([#72](https://github.com/cowofevil/flask-ligand-example/issues/72)) ([`7362725`](https://github.com/cowofevil/flask-ligand-example/commit/736272511e07f2b4ce0f1c3f9d67948ceb09bf1b))
+* Build(deps-dev): update black requirement from ~=23.1 to ~=23.3 ([`654052f`](https://github.com/cowofevil/flask-ligand-example/commit/654052f5236cb7196018f0b0b46f72cf49c9cef7))
+* Build(deps-dev): update pipdeptree requirement from ~=2.5 to ~=2.7 ([`7463377`](https://github.com/cowofevil/flask-ligand-example/commit/7463377b4e59c724aa696845d2f9e2723d9db769))
+* Build(deps-dev): update ipython requirement from ~=8.11 to ~=8.12 ([`fdad35c`](https://github.com/cowofevil/flask-ligand-example/commit/fdad35c60bbe2f30e38d814b5ad02f6c840a7a97))
+* Build(deps-dev): update pre-commit requirement from ~=3.1 to ~=3.2 ([`fdf3a10`](https://github.com/cowofevil/flask-ligand-example/commit/fdf3a10306cf9337f977659e81d27dd0ca2b996b))
+* [pre-commit.ci] pre-commit autoupdate ([`167b872`](https://github.com/cowofevil/flask-ligand-example/commit/167b872f605b87f3e3be8022becbf54a1b1a171b))
+* Build(deps-dev): update types-setuptools requirement ([`dc389ba`](https://github.com/cowofevil/flask-ligand-example/commit/dc389ba07e500c00914c3f2bdf1ec587ba9c5a84))
+* Build(deps-dev): update mypy requirement from ~=1.0 to ~=1.1 ([`f55b64e`](https://github.com/cowofevil/flask-ligand-example/commit/f55b64ed00592174b3ebc3c9c069f22d9db9dc14))
+* [pre-commit.ci] pre-commit autoupdate ([`ee0b466`](https://github.com/cowofevil/flask-ligand-example/commit/ee0b4668f266268d13ad14da9413341168aea8d1))
+* [FIX] pre-commit ([`4ba9a92`](https://github.com/cowofevil/flask-ligand-example/commit/4ba9a921e74c8b0a1d34d8066f4a39ce6b6a0dab))
+* Build(deps-dev): update pipdeptree requirement from ~=2.3 to ~=2.5 ([`c06425e`](https://github.com/cowofevil/flask-ligand-example/commit/c06425e39693715993b335c74e249d505bdf4884))
+* Build(deps-dev): update pre-commit requirement from ~=3.0 to ~=3.1 ([`946835c`](https://github.com/cowofevil/flask-ligand-example/commit/946835c117da354a83dc4f4532e924b8337aee97))
+* Build(deps-dev): update coverage[toml] requirement from ~=7.1 to ~=7.2 ([`f8ccba0`](https://github.com/cowofevil/flask-ligand-example/commit/f8ccba0173f13f99e48397e419c30daa573e48e2))
+* Build(deps-dev): update types-setuptools requirement ([`8641779`](https://github.com/cowofevil/flask-ligand-example/commit/8641779683dfe43eec67cfec818fc1508f2861d0))
+* Build(deps-dev): update ipython requirement from ~=8.10 to ~=8.11 ([`cfb88f7`](https://github.com/cowofevil/flask-ligand-example/commit/cfb88f774c321c7d0d0e16f9dda4322edbe9014f))
+* [FIX] Update flask-ligand Dep Version ([`d2d5b57`](https://github.com/cowofevil/flask-ligand-example/commit/d2d5b57a49bfb962c3049b268b4039fbed3fe51f))
+* Build(deps-dev): update types-setuptools requirement ([`93c8363`](https://github.com/cowofevil/flask-ligand-example/commit/93c83639e1d39a66d917b5a666623fc9e8f6514e))
+* Build(deps-dev): update mypy requirement from ~=0.991 to ~=1.0 ([#51](https://github.com/cowofevil/flask-ligand-example/issues/51)) ([`68363c3`](https://github.com/cowofevil/flask-ligand-example/commit/68363c378a8246bda5ee14ac10b301725c45d522))
+* Build(deps-dev): update black requirement from ~=22.12 to ~=23.1 ([`9bd0137`](https://github.com/cowofevil/flask-ligand-example/commit/9bd0137427d4f595317d769f804aa01b96d91e3a))
+* Build(deps-dev): update ipython requirement from ~=8.8 to ~=8.10 ([`cbec58b`](https://github.com/cowofevil/flask-ligand-example/commit/cbec58b8eb149141147ccf42350235852158b66a))
+* Build(deps-dev): update python-semantic-release requirement ([`3be69e8`](https://github.com/cowofevil/flask-ligand-example/commit/3be69e84c67ad3651fd403bff944dbcb5ee7ed3e))
+* [pre-commit.ci] pre-commit autoupdate ([`47db200`](https://github.com/cowofevil/flask-ligand-example/commit/47db20093369af2ad818816566ac19374447b584))
+* [pre-commit.ci] pre-commit autoupdate ([`7fe4db1`](https://github.com/cowofevil/flask-ligand-example/commit/7fe4db1886ce333a96ff870458d9b9cb1230c42c))
+
 ## v0.5.1 (2023-02-10)
 ### Fix
 * [560:robot:] Fix mypy Issues and Badge ([`742f698`](https://github.com/cowofevil/flask-ligand-example/commit/742f69853db986096b3715a65fa42742c381c275))
