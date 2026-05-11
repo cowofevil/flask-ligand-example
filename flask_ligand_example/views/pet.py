@@ -14,7 +14,6 @@ from flask_ligand.extensions.jwt import jwt_role_required, abort
 from flask_ligand.extensions.api import Blueprint, SQLCursorPage
 from flask_ligand_example.schemas import PetSchema, PetQueryArgsSchema
 
-
 # ======================================================================================================================
 # Type Checking
 # ======================================================================================================================

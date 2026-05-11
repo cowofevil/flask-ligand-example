@@ -8,7 +8,6 @@ from marshmallow_sqlalchemy import auto_field, field_for
 from flask_ligand.extensions.api import AutoSchema, Schema
 from flask_ligand_example.models import PetModel, NAME_MAX_LENGTH
 
-
 # ======================================================================================================================
 # Globals
 # ======================================================================================================================

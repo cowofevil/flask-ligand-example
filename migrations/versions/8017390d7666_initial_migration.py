@@ -6,10 +6,10 @@ Revises:
 Create Date: 2022-09-10 14:59:22.764022
 
 """
+
 from alembic import op
 import sqlalchemy as sa
 import sqlalchemy_utils
-
 
 # revision identifiers, used by Alembic.
 revision = "8017390d7666"
