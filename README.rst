@@ -16,7 +16,7 @@ Prerequisites
 -------------
 
 - Python 3.10+
-- virtualenvwrapper_
+- `Hatch 1.6+`_
 - Docker_ (with `Compose V2`_)
 
 Clone Repo
@@ -26,31 +26,34 @@ Clone Repo
 
     $ git clone git@github.com:cowofevil/flask-ligand-example.git
 
-Make Targets
-------------
-
-Execute the following command to get a full list of ``make`` targets::
-
-    $ make help
-
 Setup Python Environment
 ------------------------
 
-1. Create a Python virtual environment::
+1. Navigate to your local git clone of this repository and create a Hatch 'virtualenv' environment for development::
 
-    $ mkvirtualenv -p py310 flask-ligand-example
+    $ hatch env create
 
-2. Setup develop environment::
+2. Verify development environment is working by running tests::
 
-    $ make develop-venv
+    $ hatch test
 
 3. Setup git pre-commit hooks::
 
-    $ make setup-pre-commit
+    $ hatch run setup-pre-commit
 
-4. Verify that environment is ready for development::
+4. Prime 'tox' for fast testing::
 
-    $ make test-tox
+    $ hatch run test-tox
+
+5. Run tests super fast against all supported Python versions::
+
+    $ hatch run test-tox-fast
+
+6. Enable the Hatch 'virtualenv' development environment::
+
+    $ hatch shell
+
+7. Have fun hacking!
 
 Setup Docker Environment
 ------------------------
@@ -59,15 +62,15 @@ The included docker environment used for integration testing can also be used fo
 
 1. Setup the Docker environment::
 
-    $ make setup-integration
+    $ hatch run setup-integration
 
 2. Verify that the Docker environment is ready::
 
-    $ make check-integration
+    $ hatch run check-integration
 
 3. (Optionally) Execute the integration tests::
 
-    $ make test-integration
+    $ hatch run test-integration
 
 Explore with SwaggerUI Docs
 ===========================
@@ -79,19 +82,19 @@ to serve the `SwaggerUI`_ documentation.
 
 1. Generate a '.env' file to configure Flask server to use the included Docker environment::
 
-    $ make gen-local-env-file
+    $ mhatch run gen-local-env-file
 
 2. Initialize the database::
 
-    $ make setup-db
+    $ hatch run setup-db
 
 3. Generate a JWT access token with admin rights for accessing the included example project endpoints::
 
-    $ make gen-admin-access-token
+    $ hatch run gen-admin-access-token
 
 4. Start the local Flask server::
 
-    $ make run
+    $ hatch run run-server
 
 5. Open a browser and navigate to 'http://localhost:5000/apidocs'.
 6. Click the 'Authorize' button and paste in the JWT access token you created previously.
@@ -120,7 +123,7 @@ Resources
 - `Contributing`_
 - `License`_
 
-.. _virtualenvwrapper: https://virtualenvwrapper.readthedocs.io/en/latest/
+.. _Hatch 1.6+: https://hatch.pypa.io/latest/
 .. _Docker: https://www.docker.com/products/docker-desktop/
 .. _Compose V2: https://docs.master.dockerproject.org/compose/#compose-v2-and-the-new-docker-compose-command
 .. _flask-ligand: https://flask-ligand.readthedocs.io/en/stable/
