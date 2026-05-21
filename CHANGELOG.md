@@ -3,6 +3,19 @@ Changelog
 
 <!-- version list -->
 
+## v0.5.3 (2026-05-21)
+
+### :bug:
+
+- :bug: Fix IntelliJ Run Configs
+  ([`f264ea4`](https://github.com/cowofevil/flask-ligand-example/commit/f264ea4cea6fbead903fa6454ada778dd59d3a7e))
+
+### Other
+
+- ✨ Migrate Setup, Build, Test to Hatch
+  ([`d90e7d4`](https://github.com/cowofevil/flask-ligand-example/commit/d90e7d48b493556e8b379020a4779c45d48b59bf))
+
+
 ## v0.5.2 (2023-05-18)
 ### Fix
 * [CHORE:bug:] Update Deps ([`0d81235`](https://github.com/cowofevil/flask-ligand-example/commit/0d81235ffd20478748f71d42ebdd5aaf720e9e0a))
