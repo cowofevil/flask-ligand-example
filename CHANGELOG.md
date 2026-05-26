@@ -3,6 +3,19 @@ Changelog
 
 <!-- version list -->
 
+## v0.5.4 (2026-05-26)
+
+### :bug:
+
+- :bug: Fix Integration Environment Setup
+  ([`ff246ce`](https://github.com/cowofevil/flask-ligand-example/commit/ff246ce82caf39568057bc06941f0263e7964693))
+
+### Other
+
+- Fix Codecov and Broken PR GH Action
+  ([`72f2483`](https://github.com/cowofevil/flask-ligand-example/commit/72f24836599ec782bff2e9dfc69af4c23e35ea9b))
+
+
 ## v0.5.3 (2026-05-21)
 
 ### :bug:
