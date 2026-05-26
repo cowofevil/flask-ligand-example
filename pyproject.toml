@@ -74,7 +74,7 @@ mypy = [
     "types-setuptools~=67.7",
     "types-smorest~=1.1",
     "types-SQLAlchemy~=1.4",
-    "types-sqlalchemy-utils~=1.0",
+    "types-sqlalchemy-utils~=1.1",
     "types-urllib3<1.27",
 ]
 test= [
