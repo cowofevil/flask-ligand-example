@@ -206,11 +206,12 @@ check-integration = """rm -f /tmp/ligand.resp; \
 	done; \
 	if [ ! -s /tmp/ligand.resp ]; then echo 'Integration testing environment is not running!' && exit 1; fi"""
 setup-integration = "docker compose up -d"
-setup-db = "flask db upgrade -d tests/integration/migrations"
+setup-db = "flask db upgrade -d migrations"
 teardown-integration = "docker compose down"
 gen-local-env-file = """echo "FLASK_ENV=local\n"\
 	"OIDC_DISCOVERY_URL=http://localhost:8080/realms/flask-ligand/.well-known/openid-configuration\n"\
-	"SQLALCHEMY_DATABASE_URI=postgresql+pg8000://admin:password@localhost:5432/app" > '.env'"""
+	"SQLALCHEMY_DATABASE_URI=postgresql+pg8000://admin:password@localhost:5432/app\n"\
+	"OPENAPI_GEN_SERVER_URL=http://localhost:8888\n" > '.env'"""
 gen-admin-access-token = """curl --request POST \
     --url http://localhost:8080/realms/flask-ligand/protocol/openid-connect/token \
     --header 'content-type: application/x-www-form-urlencoded' \
@@ -247,7 +248,7 @@ coverage-xml = [
     "coverage xml"
 ]
 install = [
-    "clean",
+    "clean-all",
     "uv pip install '.'"
 ]
 install-edit = "uv pip install -e '.'"
