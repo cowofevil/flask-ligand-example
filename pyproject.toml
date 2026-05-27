@@ -77,7 +77,7 @@ mypy = [
     "types-urllib3<1.27",
 ]
 test= [
-    "pg8000==1.29.8",
+    "pg8000==1.31.5",
     "pytest==9.0.3",
     "pytest-mock==3.15.1",
     "tox==4.54.0",
@@ -270,7 +270,7 @@ gen-docs = "cd docs && make html"
 # This is an intentional duplicate of 'test' dependencies in order to fix a bug in hatch
 # KEEP THIS IN SYNC WITH TEST DEPENDENCIES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 dependencies = [
-    "pg8000==1.29.8",
+    "pg8000==1.31.5",
     "pytest==9.0.3",
     "pytest-mock==3.15.1",
     "tox==4.54.0",
