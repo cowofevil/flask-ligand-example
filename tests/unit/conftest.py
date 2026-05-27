@@ -2,12 +2,15 @@
 # Imports
 # ======================================================================================================================
 from __future__ import annotations
-import pytest
+
 from typing import TYPE_CHECKING
-from flask_ligand_example import create_app
-from flask_ligand.extensions.jwt import JWT
-from flask_ligand.extensions.database import DB
+
+import pytest
 from flask_jwt_extended import create_access_token
+from flask_ligand.extensions.database import DB
+from flask_ligand.extensions.jwt import JWT
+
+from flask_ligand_example import create_app
 
 pytest_plugins = ["flask_ligand", "tests.common.fixtures"]
 
@@ -16,11 +19,12 @@ pytest_plugins = ["flask_ligand", "tests.common.fixtures"]
 # Type Checking
 # ======================================================================================================================
 if TYPE_CHECKING:
-    from flask import Flask
     from typing import Any, Callable
+
+    from flask import Flask
     from flask.testing import FlaskClient
-    from pytest_mock import MockerFixture
     from pytest_flask_ligand import FlaskLigandTestHelpers
+    from pytest_mock import MockerFixture
 
 
 # ======================================================================================================================
@@ -62,6 +66,9 @@ def basic_flask_app(jwt_init_app: Callable[[Flask], None], open_api_client_name:
 @pytest.fixture(scope="function")
 def app_test_client(basic_flask_app: Flask) -> FlaskClient:
     """Flask app test client."""
+
+    # Turn on testing flag so full stack traces are available in exceptions
+    basic_flask_app.testing = True
 
     return basic_flask_app.test_client()
 
