@@ -2,14 +2,17 @@
 # Imports
 # ======================================================================================================================
 from __future__ import annotations
-import pytest
+
 from os import walk
 from os.path import join
-from requests import post
-from dotenv import dotenv_values
 from typing import TYPE_CHECKING
-from flask_migrate import downgrade
+
+import pytest
+from dotenv import dotenv_values
 from flask.testing import FlaskClient
+from flask_migrate import downgrade
+from requests import post
+
 from flask_ligand_example import create_app
 
 pytest_plugins = ["flask_ligand", "tests.common.fixtures"]
@@ -19,8 +22,9 @@ pytest_plugins = ["flask_ligand", "tests.common.fixtures"]
 # Type Checking
 # ======================================================================================================================
 if TYPE_CHECKING:
+    from typing import Any, Generator, Optional
+
     from flask import Flask
-    from typing import Any, Optional, Generator
     from pytest_flask_ligand import FlaskLigandTestHelpers
 
 
@@ -139,6 +143,9 @@ def basic_flask_app(
 @pytest.fixture(scope="function")
 def app_test_client(basic_flask_app: Flask, migration_directory: str) -> Generator[FlaskClient, None, None]:
     """Flask app test client with 'IntegrationTestView' pre-configured."""
+
+    # Turn on testing flag so full stack traces are available in exceptions
+    basic_flask_app.testing = True
 
     yield basic_flask_app.test_client()
 

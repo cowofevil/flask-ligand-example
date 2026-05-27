@@ -4,11 +4,13 @@
 # Imports
 # ======================================================================================================================
 from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 import flask_ligand
 from flask import Flask
-from typing import TYPE_CHECKING
-from flask_ligand_example import views
 
+from flask_ligand_example import views
 
 # ======================================================================================================================
 # Type Checking
