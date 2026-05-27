@@ -3,6 +3,14 @@ Changelog
 
 <!-- version list -->
 
+## v0.5.5 (2026-05-27)
+
+### :bug:
+
+- :bug: Update Dependencies and Sync Project with 'flask-ligand'
+  ([`9f7f1d3`](https://github.com/cowofevil/flask-ligand-example/commit/9f7f1d3c85eafdfd9fa00c235195c6f426c38b8d))
+
+
 ## v0.5.4 (2026-05-26)
 
 ### :bug:
