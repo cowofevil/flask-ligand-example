@@ -3,6 +3,40 @@ Changelog
 
 <!-- version list -->
 
+## v0.5.6 (2026-10-15)
+
+### :robot:
+
+- :robot: Update Dependencies 20261015
+  ([`a4dc6f3`](https://github.com/cowofevil/flask-ligand-example/commit/a4dc6f304de9e2e82948d570406ce39b7379b3f9))
+
+### Other
+
+- Build(deps): bump actions/checkout from 5 to 6
+  ([`9180176`](https://github.com/cowofevil/flask-ligand-example/commit/91801768faeb87e97b495fe035c56098703bb3e8))
+
+- Build(deps): bump actions/checkout from 6 to 7
+  ([`7ba6380`](https://github.com/cowofevil/flask-ligand-example/commit/7ba6380ac59a8243198af8e0c86cf1653ec55c85))
+
+- Build(deps): bump actions/setup-python from 5 to 6
+  ([`b80d469`](https://github.com/cowofevil/flask-ligand-example/commit/b80d4692096f597db952ffffed63b870085b2cf4))
+
+- Build(deps): bump codecov/codecov-action from 5 to 6
+  ([`4643e53`](https://github.com/cowofevil/flask-ligand-example/commit/4643e535456e83012c9b2f34ca7cd850597f67f0))
+
+- Build(deps): bump codecov/codecov-action from 6 to 7
+  ([`42e3f17`](https://github.com/cowofevil/flask-ligand-example/commit/42e3f17c1d57b2584bb9895c8b6f3fd948076594))
+
+- Build(deps): bump python-semantic-release/publish-action
+  ([`78df664`](https://github.com/cowofevil/flask-ligand-example/commit/78df664fe050c8f2eb259f359ffc14c27c8c9fa8))
+
+- Build(deps): bump python-semantic-release/python-semantic-release
+  ([`a25e8c0`](https://github.com/cowofevil/flask-ligand-example/commit/a25e8c09deba27d28bba9f4019580f4b0c57f26d))
+
+- Remove MyPy Typeshed Types for 'flask-cors'
+  ([`68a44a5`](https://github.com/cowofevil/flask-ligand-example/commit/68a44a5b37a14b6d425adec20b96391afae8bf24))
+
+
 ## v0.5.5 (2026-05-27)
 
 ### :bug:
