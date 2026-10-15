@@ -66,29 +66,29 @@ black = [
     "isort==8.0.1"
 ]
 mypy = [
-    "mypy==2.1.0",
+    "mypy==2.4.0",
     "types-Flask-Migrate==4.1.0.20260508",
     "types-mock==5.2.0.20260518",
-    "types-PyYAML==6.0.12.20260518",
-    "types-requests==2.33.0.20260518",
+    "types-PyYAML==6.0.12.20260906",
+    "types-requests==2.33.0.20261006",
     "types-smorest==1.1.2",
     "types-sqlalchemy-utils==1.1.0",
     "types-urllib3<1.27",
 ]
 test= [
     "pg8000==1.31.5",
-    "pytest==9.0.3",
+    "pytest==9.1.1",
     "pytest-mock==3.15.1",
-    "tox==4.56.1",
-    "tox-uv==1.35.2",
-    "coverage[toml]==7.15.0",
+    "tox==4.60.1",
+    "tox-uv==1.36.1",
+    "coverage[toml]==7.15.2",
     "pytest-cov==7.1.0",
     "pytest-flask-ligand",
     "Pygments==2.20.0"
 ]
 dev = [
     "ipython==8.39.0",
-    "python-semantic-release==10.6.1",
+    "python-semantic-release==10.7.0",
     {include-group = "pre-commit"},
     {include-group = "black"},
     {include-group = "mypy"},
